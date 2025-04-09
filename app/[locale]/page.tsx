@@ -1,13 +1,18 @@
-import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/navigation';
-import { Button } from '@/components/ui/button';
+'use client'
+import About from '@/components/sections/About/AboutSection';
+import Contact from '@/components/sections/Contact/ContactSection';
+import Hero from '@/components/sections/Hero/HeroSection';
+import Projects from '@/components/sections/Projects/ProjectsSection';
+import Skills from '@/components/sections/Skills/SkillsSection';
  
 export default function HomePage() {
-  const t = useTranslations('Home');
   return (
-    <div className="">
-      <h1>{t('title')}</h1>
-      <Button>kuay</Button>
-    </div>
+    <>
+    <Hero/>
+    <Skills/>
+    <Projects/>
+    <About/>
+    <Contact/>
+    </>
   );
 }

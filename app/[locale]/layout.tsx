@@ -23,7 +23,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
-        <div className="flex flex-col items-center">
         <NextIntlClientProvider>
         <ThemeProvider
             attribute="class"
@@ -36,7 +35,6 @@ export default async function LocaleLayout({
           <Footer />
         </ThemeProvider>
         </NextIntlClientProvider>
-        </div>
       </body>
     </html>
   );
