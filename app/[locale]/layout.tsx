@@ -1,8 +1,11 @@
+import "@/style/globals.css"
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
+
 
 export default async function LocaleLayout({
   children,
@@ -18,13 +21,22 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body>
+        <div className="flex flex-col items-center">
         <NextIntlClientProvider>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
           <Header />
           {children}
           <Footer />
+        </ThemeProvider>
         </NextIntlClientProvider>
+        </div>
       </body>
     </html>
   );
