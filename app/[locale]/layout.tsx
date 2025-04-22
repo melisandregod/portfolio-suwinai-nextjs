@@ -1,4 +1,3 @@
-'use client'
 import "@/style/globals.css"
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -24,7 +23,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"

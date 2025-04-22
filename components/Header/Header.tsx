@@ -9,10 +9,10 @@ export default function Header() {
 
   return (
     <div className="flex justify-center">
-      <nav className="fixed m-5 py-5 px-7 bg-primary/95 rounded-4xl drop-shadow-2xl">
+      <nav className="fixed m-5 py-5 px-7 bg-primary rounded-4xl drop-shadow-xl/40 drop-shadow-primary">
         <ul className="flex items-center justify-center gap-8">
-          {data.map((d) => (
-            <li className="hover:bg-secondary">{t(d)}</li>
+          {data.map((d,i) => (
+            <li key={i} className="hover:bg-secondary text-primary-foreground cursor-pointer">{t(d)}</li>
           ))}
           <ModeToggle />
         </ul>

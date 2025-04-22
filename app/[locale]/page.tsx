@@ -1,5 +1,5 @@
 'use client'
-import About from '@/components/sections/About/AboutSection';
+import Experience from '@/components/sections/Experience/ExperienceSection';
 import Contact from '@/components/sections/Contact/ContactSection';
 import Hero from '@/components/sections/Hero/HeroSection';
 import Projects from '@/components/sections/Projects/ProjectsSection';
@@ -11,7 +11,7 @@ export default function HomePage() {
     <Hero/>
     <Skills/>
     <Projects/>
-    <About/>
+    <Experience/>
     <Contact/>
     </>
   );

@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 
 import { Button } from "../../ui/button";
 
-export default function About() {
+export default function Experience() {
   const t = useTranslations("Home");
   return (
     <div className="flex">
