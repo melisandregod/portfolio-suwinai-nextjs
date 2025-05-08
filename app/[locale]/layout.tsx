@@ -1,11 +1,11 @@
-import "@/style/globals.css"
+import "@/style/globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
-
+import ObserverProvider from "@/components/ObserverProvider";
 
 export default async function LocaleLayout({
   children,
@@ -24,16 +24,18 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider locale={locale}>
-        <ThemeProvider
+          <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+            <ObserverProvider>
+              <Header />
+              {children}
+              <Footer />
+            </ObserverProvider>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

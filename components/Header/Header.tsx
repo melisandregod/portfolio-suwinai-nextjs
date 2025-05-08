@@ -34,7 +34,11 @@ export default function Header() {
       </div>
       {/* Responsive Design */}
       <div className="sm:hidden flex justify-end w-full">
-        <div className="fixed ml-1 mt-4">
+        <div
+          className={`${
+            !toggleMenu ? "motion-translate-y-loop-25" : ""
+          } motion-duration-[2s] fixed z-[9999] ml-1 mt-4`}
+        >
           <DropdownMenu onOpenChange={() => setToggleMenu((prev) => !prev)}>
             <span className="mr-5 bg-primary rounded-[1000px] flex justify-center items-center size-15 drop-shadow-xl/40 drop-shadow-primary">
               <DropdownMenuTrigger>
@@ -55,7 +59,7 @@ export default function Header() {
                 </DropdownMenuItem>
               ))}
               <div className="my-2">
-              <ModeToggle/>
+                <ModeToggle />
               </div>
             </DropdownMenuContent>
           </DropdownMenu>
