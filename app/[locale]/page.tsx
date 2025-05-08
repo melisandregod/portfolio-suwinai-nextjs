@@ -7,12 +7,12 @@ import Skills from '@/components/sections/Skills/SkillsSection';
  
 export default function HomePage() {
   return (
-    <div className="mt-30">
+    <>
     <Hero/>
     <Skills/>
     <Experience/>
     <Projects/>
     <Contact/>
-    </div>
+    </>
   );
 }
