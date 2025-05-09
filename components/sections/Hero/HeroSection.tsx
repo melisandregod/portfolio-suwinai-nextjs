@@ -46,10 +46,16 @@ export default function Hero() {
             <CircleUserIcon size={1000} />
             Contact Me
           </Button>
-          <Button className="ml-3">
-            <HardDriveDownloadIcon />
-            Download CV
-          </Button>
+          <Link
+            href={
+              "https://drive.usercontent.google.com/download?id=1EYQ4C_Eg1EuVWaivYynrNb6FnJVpCIeJ&export=download&authuser=0&confirm=t&uuid=d6a7eece-73cf-4e31-837c-748aae872172&at=ALoNOgly9Pu1Tf8wLHFjucJj9HtI:1746802655228"
+            }
+          >
+            <Button className="ml-3">
+              <HardDriveDownloadIcon />
+              Download CV
+            </Button>
+          </Link>
         </div>
         <div className="flex w-full justify-end gap-2">
           <Link href={"https://github.com/melisandregod"}>
@@ -94,28 +100,34 @@ export default function Hero() {
               {t("description")}
             </p>
             <span className="flex mt-4 w-full gap-3">
-              <Button className="ml-1 motion-translate-y-loop-25 cursor-pointer">
-                <HardDriveDownloadIcon />
-                Download CV
-              </Button>
-              <Button className="ml-3 mr-3 cursor-pointer">
+              <Link
+                href={
+                  "https://drive.usercontent.google.com/download?id=1EYQ4C_Eg1EuVWaivYynrNb6FnJVpCIeJ&export=download&authuser=0&confirm=t&uuid=d6a7eece-73cf-4e31-837c-748aae872172&at=ALoNOgly9Pu1Tf8wLHFjucJj9HtI:1746802655228"
+                }
+              >
+                <Button className="ml-1 motion-translate-y-loop-25 cursor-pointer">
+                  <HardDriveDownloadIcon />
+                  Download CV
+                </Button>
+              </Link>
+              <Button className="ml-3 mr-3 cursor-pointer lg:flex md:hidden">
                 <CircleUserIcon size={1000} />
                 Contact Me
               </Button>
               <Link href={"https://github.com/melisandregod"}>
-                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
+                <Button className="hidden 2xl:flex rounded-4xl cursor-pointer">
                   <GithubIcon />
                   GitHub
                 </Button>
               </Link>
               <Link href={"https://www.facebook.com/nothep/"}>
-                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
+                <Button className="hidden 2xl:flex rounded-4xl cursor-pointer">
                   <FacebookIcon />
                   Facebook
                 </Button>
               </Link>
               <Link href={"https://www.instagram.com/momomeez/"}>
-                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
+                <Button className="hidden 2xl:flex rounded-4xl cursor-pointer">
                   <InstagramIcon />
                   Instagram
                 </Button>
@@ -125,7 +137,7 @@ export default function Hero() {
                   "https://www.linkedin.com/in/suwinai-aiamsumaung-23b041350/"
                 }
               >
-                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
+                <Button className="hidden 2xl:flex rounded-4xl cursor-pointer">
                   <LinkedinIcon />
                 </Button>
               </Link>
