@@ -18,8 +18,8 @@ export default function Header() {
 
   return (
     <>
-      <div className="hidden sm:flex justify-center">
-        <nav className="fixed m-5 py-5 px-7 bg-primary rounded-4xl drop-shadow-xl/40 drop-shadow-primary">
+      <div className="hidden md:flex justify-center">
+        <nav className="z-[1000] fixed m-5 py-5 px-7 bg-primary rounded-4xl drop-shadow-xl/40 drop-shadow-primary">
           <ul className="flex items-center justify-center gap-8">
             {data.map((d, i) => (
               <li
@@ -35,7 +35,7 @@ export default function Header() {
         </nav>
       </div>
       {/* Responsive Design */}
-      <div className="sm:hidden flex justify-end w-full">
+      <div className="md:hidden flex justify-end w-full">
         <div
           className={`${
             !toggleMenu ? "motion-translate-y-loop-25" : ""
