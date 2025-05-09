@@ -1,7 +1,16 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import {
+  CircleUserIcon,
+  FacebookIcon,
+  GithubIcon,
+  HardDriveDownloadIcon,
+  InstagramIcon,
+  LinkedinIcon,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 // import { Link } from "@/i18n/navigation";
 
 export default function Hero() {
@@ -33,7 +42,38 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex w-full justify-end">
-          <Button className="ml-3">Download CV</Button>
+          <Button className="ml-3">
+            <CircleUserIcon size={1000} />
+            Contact Me
+          </Button>
+          <Button className="ml-3">
+            <HardDriveDownloadIcon />
+            Download CV
+          </Button>
+        </div>
+        <div className="flex w-full justify-end gap-2">
+          <Link href={"https://github.com/melisandregod"}>
+            <Button className="rounded-4xl">
+              <GithubIcon />
+            </Button>
+          </Link>
+          <Link href={"https://www.facebook.com/nothep/"}>
+            <Button className="rounded-4xl">
+              <FacebookIcon />
+            </Button>
+          </Link>
+          <Link href={"https://www.instagram.com/momomeez/"}>
+            <Button className="rounded-4xl">
+              <InstagramIcon />
+            </Button>
+          </Link>
+          <Link
+            href={"https://www.linkedin.com/in/suwinai-aiamsumaung-23b041350/"}
+          >
+            <Button className="rounded-4xl">
+              <LinkedinIcon />
+            </Button>
+          </Link>
         </div>
       </div>
       {/* Desktop Responsive */}
@@ -53,18 +93,52 @@ export default function Hero() {
             <p className="text-l lg:text-xl intersect:motion-preset-slide-left motion-delay-300 motion-duration-1000">
               {t("description")}
             </p>
-            <span className="mt-4 w-full">
-            <Button className="ml-1 motion-translate-y-loop-25 cursor-pointer">Download CV</Button>
+            <span className="flex mt-4 w-full gap-3">
+              <Button className="ml-1 motion-translate-y-loop-25 cursor-pointer">
+                <HardDriveDownloadIcon />
+                Download CV
+              </Button>
+              <Button className="ml-3 mr-3">
+                <CircleUserIcon size={1000} />
+                Contact Me
+              </Button>
+              <Link href={"https://github.com/melisandregod"}>
+                <Button className="hidden xl:flex rounded-4xl">
+                  <GithubIcon />
+                  GitHub
+                </Button>
+              </Link>
+              <Link href={"https://www.facebook.com/nothep/"}>
+                <Button className="hidden xl:flex rounded-4xl">
+                  <FacebookIcon />
+                  Facebook
+                </Button>
+              </Link>
+              <Link href={"https://www.instagram.com/momomeez/"}>
+                <Button className="hidden xl:flex rounded-4xl">
+                  <InstagramIcon />
+                  Instagram
+                </Button>
+              </Link>
+              <Link
+                href={
+                  "https://www.linkedin.com/in/suwinai-aiamsumaung-23b041350/"
+                }
+              >
+                <Button className="hidden xl:flex rounded-4xl">
+                  <LinkedinIcon />
+                </Button>
+              </Link>
             </span>
           </div>
           <div className="flex items-center mr-10">
-          <Image
-            src="/images/profile.jpg"
-            width={500}
-            height={500}
-            alt="Profile Picture"
-            className="intersect:motion-preset-expand motion-duration-1000 motion-delay-0 rounded-[50px] object-cover object-top border-2 border-primary drop-shadow-xl drop-shadow-accent"
-          />
+            <Image
+              src="/images/profile.jpg"
+              width={500}
+              height={500}
+              alt="Profile Picture"
+              className="intersect:motion-preset-expand motion-duration-1000 motion-delay-0 rounded-[50px] object-cover object-top border-2 border-primary drop-shadow-xl drop-shadow-accent"
+            />
           </div>
         </div>
       </div>
