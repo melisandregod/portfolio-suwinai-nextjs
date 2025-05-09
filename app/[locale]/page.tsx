@@ -10,8 +10,8 @@ export default function HomePage() {
     <>
     <Hero/>
     <Skills/>
-    <Experience/>
     <Projects/>
+    <Experience/>
     <Contact/>
     </>
   );

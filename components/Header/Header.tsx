@@ -7,12 +7,13 @@ import {
   DropdownMenu,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
-import { DropdownMenuContent, DropdownMenuItem } from "../ui/dropdown-menu";
+import { DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator} from "../ui/dropdown-menu";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
 
-  const data = ["Home", "Projects", "Skills", "About", "Contact"];
+  const data = ["Home", "Skills", "Projects", "Experience", "Contact"];
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -29,6 +30,7 @@ export default function Header() {
               </li>
             ))}
             <ModeToggle />
+            <LanguageSwitcher/>
           </ul>
         </nav>
       </div>
@@ -43,9 +45,9 @@ export default function Header() {
             <span className="mr-5 bg-primary rounded-[1000px] flex justify-center items-center size-15 drop-shadow-xl/40 drop-shadow-primary">
               <DropdownMenuTrigger>
                 {toggleMenu ? (
-                  <XIcon className="size-7" />
+                  <XIcon className="size-7" color="white" />
                 ) : (
-                  <MenuIcon className="size-7" />
+                  <MenuIcon className="size-7" color="white" />
                 )}
               </DropdownMenuTrigger>
             </span>
@@ -58,9 +60,13 @@ export default function Header() {
                   {t(d)}
                 </DropdownMenuItem>
               ))}
+              <DropdownMenuSeparator className="w-full bg-secondary"/>
               <div className="my-2">
                 <ModeToggle />
               </div>
+              <span className="m-1">
+              <LanguageSwitcher/>
+              </span>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
