@@ -20,11 +20,11 @@ export default function Hero() {
       {/* Mobile Responsive */}
       <div className="md:hidden flex flex-col items-center gap-5">
         <Image
-          src="/images/profile.jpg"
+          src="/images/profile1.png"
           width={200}
           height={200}
           alt="Profile Picture"
-          className="intersect:motion-preset-expand motion-duration-1000 motion-delay-0 w-50 h-50 rounded-[1000px] object-cover object-top border-2 border-primary drop-shadow-xl drop-shadow-accent "
+          className="intersect:motion-preset-expand motion-duration-1000 motion-delay-0 w-50 h-50 rounded-[1000px] object-cover border-2 border-primary drop-shadow-xl drop-shadow-accent "
         />
         <div className="overflow-hidden">
           <h1 className="intersect:motion-preset-slide-right motion-delay-0 motion-duration-1000">
@@ -133,7 +133,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center mr-10">
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile1.png"
               width={500}
               height={500}
               alt="Profile Picture"

@@ -6,6 +6,12 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
 import ObserverProvider from "@/components/ObserverProvider";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title : 'Suwinai Aiamsumaung Portfolio',
+  icons: '/images/profile.jpg'
+}
 
 export default async function LocaleLayout({
   children,

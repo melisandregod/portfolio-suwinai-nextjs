@@ -1,11 +1,8 @@
 'use client'
-import { useTranslations } from "next-intl";
-// import { Link } from "@/i18n/navigation";
 
-import { Button } from "../../ui/button";
 
 export default function Contact() {
-  const t = useTranslations("Home");
+
   return (
     <div className="flex">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis sapien et purus luctus, a imperdiet orci molestie. Fusce blandit, ipsum quis luctus ultricies, est orci viverra eros, non egestas quam libero in purus. Cras mattis eros diam, a vestibulum risus dictum ut. Phasellus elementum convallis sem, id dictum leo blandit pellentesque. In pretium condimentum condimentum. Ut eget nulla massa. Vivamus lectus enim, tincidunt id tortor eget, venenatis posuere eros. In massa tellus, convallis eget ultrices eu, finibus at urna. Nullam tempor urna et est pharetra malesuada. Etiam eu enim orci. Proin ac diam eget erat efficitur suscipit.
