@@ -98,24 +98,24 @@ export default function Hero() {
                 <HardDriveDownloadIcon />
                 Download CV
               </Button>
-              <Button className="ml-3 mr-3">
+              <Button className="ml-3 mr-3 cursor-pointer">
                 <CircleUserIcon size={1000} />
                 Contact Me
               </Button>
               <Link href={"https://github.com/melisandregod"}>
-                <Button className="hidden xl:flex rounded-4xl">
+                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
                   <GithubIcon />
                   GitHub
                 </Button>
               </Link>
               <Link href={"https://www.facebook.com/nothep/"}>
-                <Button className="hidden xl:flex rounded-4xl">
+                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
                   <FacebookIcon />
                   Facebook
                 </Button>
               </Link>
               <Link href={"https://www.instagram.com/momomeez/"}>
-                <Button className="hidden xl:flex rounded-4xl">
+                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
                   <InstagramIcon />
                   Instagram
                 </Button>
@@ -125,7 +125,7 @@ export default function Hero() {
                   "https://www.linkedin.com/in/suwinai-aiamsumaung-23b041350/"
                 }
               >
-                <Button className="hidden xl:flex rounded-4xl">
+                <Button className="hidden xl:flex rounded-4xl cursor-pointer">
                   <LinkedinIcon />
                 </Button>
               </Link>
