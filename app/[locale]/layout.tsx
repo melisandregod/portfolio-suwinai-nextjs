@@ -10,7 +10,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title : 'Suwinai Aiamsumaung Portfolio',
-  icons: '/images/profile.jpg'
+  icons: '/images/profile.jpg',
+  description : 'Suwinai Aiamsumaung Portfolio Website'
 }
 
 export default async function LocaleLayout({
