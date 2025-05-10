@@ -39,14 +39,14 @@ export default function LocaleSwitcher() {
           className="text-l text-white hover:text-secondary cursor-pointer"
           onClick={() => switchLocale("th")}
         >
-          EN
+          TH
         </button>
       ) : (
         <button
           className="text-l text-white hover:text-secondary cursor-pointer"
           onClick={() => switchLocale("en")}
         >
-          TH
+          EN
         </button>
       )}
     </div>

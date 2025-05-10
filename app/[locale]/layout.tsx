@@ -1,4 +1,5 @@
 import "@/style/globals.css";
+import { Noto_Sans_Thai } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -9,10 +10,14 @@ import ObserverProvider from "@/components/ObserverProvider";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title : 'Suwinai Aiamsumaung Portfolio',
-  icons: '/images/profile.jpg',
-  description : 'Suwinai Aiamsumaung Portfolio Website'
-}
+  title: "Suwinai Aiamsumaung Portfolio",
+  icons: "/images/profile.jpg",
+  description: "Suwinai Aiamsumaung Portfolio Website",
+};
+
+const font = Noto_Sans_Thai({
+  subsets: ["latin","thai"]
+});
 
 export default async function LocaleLayout({
   children,
@@ -28,7 +33,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning className={font.className}>
       <body>
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider
