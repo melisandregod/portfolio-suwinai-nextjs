@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="overflow-hidden">
           <h1 className="intersect:motion-preset-slide-right motion-delay-0 motion-duration-1000">
             <p className="text-2xl">{t("title")}</p>
-            <p className="text-3xl font-bold">{t("name")}</p>
+            <p className="text-3xl font-bold drop-shadow-xs drop-shadow-black">{t("name")}</p>
           </h1>
           <p className="intersect:motion-preset-slide-right motion-delay-100 motion-duration-1000 text-2xl">
             {t("intro")}
@@ -87,8 +87,8 @@ export default function Hero() {
         <div className="flex justify-between gap-10 lg:gap-40 mx-20 px-10">
           <div className="m-2 p-2 overflow-hidden flex flex-col justify-center">
             <h1 className="intersect:motion-preset-slide-right motion-delay-0 motion-duration-1000">
-              <p className="text-2xl lg:text-5xl ">{t("title")}</p>
-              <p className="text-2xl lg:text-6xl font-bold">{t("name")}</p>
+              <p className="text-2xl lg:text-5xl">{t("title")}</p>
+              <p className="text-2xl lg:text-6xl font-bold drop-shadow-xs drop-shadow-black">{t("name")}</p>
             </h1>
             <p className="text-xl lg:text-3xl intersect:motion-preset-slide-left motion-delay-100 motion-duration-1000">
               {t("intro")}
