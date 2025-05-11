@@ -12,5 +12,8 @@
     "intro": "a Computer Engineering student with a strong interest in building digital products.",
     "work": "I’m currently gaining real-world experience and growing as a developer,",
     "description": "enjoying problem-solving, learning new things, and creating meaningful user experiences."
+  },
+  "Skills":{
+    "title": "Tools & Technologies"
   }
 }
