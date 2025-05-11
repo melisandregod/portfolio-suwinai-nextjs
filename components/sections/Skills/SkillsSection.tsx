@@ -1,22 +1,129 @@
-'use client'
+"use client";
 
-// import { Link } from "@/i18n/navigation";
-
-
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Skills() {
+  const t = useTranslations("Skills");
   return (
-    <div className="flex">
-      <div className="bg-cyan-500 intersect:bg-indigo-600 transition-colors"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis sapien et purus luctus, a imperdiet orci molestie. Fusce blandit, ipsum quis luctus ultricies, est orci viverra eros, non egestas quam libero in purus. Cras mattis eros diam, a vestibulum risus dictum ut. Phasellus elementum convallis sem, id dictum leo blandit pellentesque. In pretium condimentum condimentum. Ut eget nulla massa. Vivamus lectus enim, tincidunt id tortor eget, venenatis posuere eros. In massa tellus, convallis eget ultrices eu, finibus at urna. Nullam tempor urna et est pharetra malesuada. Etiam eu enim orci. Proin ac diam eget erat efficitur suscipit.
-
-Duis nibh sem, vehicula eget dui non, vulputate vestibulum mi. Praesent ultrices, justo eget molestie tristique, nulla nisl tempus nulla, consectetur posuere elit ligula nec tellus. Aenean fermentum sapien ut sem consectetur feugiat. Maecenas posuere porttitor eleifend. Quisque sed dui vitae risus blandit vehicula. Aenean urna erat, vestibulum vel quam quis, interdum cursus augue. Nunc eget metus quam. Etiam non nisl eget massa tristique rhoncus non ut turpis. Sed iaculis aliquam volutpat. Morbi maximus ligula a risus tristique, ac lacinia sem pharetra. Sed ornare lectus id mattis congue. Nunc laoreet hendrerit nunc, sed sodales nisi lacinia in.
-
-In imperdiet mauris a hendrerit tincidunt. Fusce viverra gravida luctus. Nullam mollis massa nec eros sagittis sodales a a leo. Proin maximus lacinia augue vel ultrices. Vestibulum gravida tortor id diam varius, sit amet rhoncus mi vulputate. Curabitur dapibus diam eget luctus porta. Proin eu nunc facilisis, consequat odio a, facilisis lacus. Mauris a libero sit amet nunc faucibus vulputate. Nullam nec nisl semper nisl egestas hendrerit at vitae augue. Vivamus sodales, nisl sit amet luctus posuere, quam augue volutpat nisl, ut finibus metus urna a leo. In accumsan accumsan convallis. Quisque eleifend molestie metus, eget porttitor leo egestas eu. Nam placerat quis risus ut auctor. Nullam varius odio nec interdum ornare. In interdum, arcu ut lacinia vehicula, felis nisi tincidunt libero, a pulvinar nisi justo et risus.
-
-Sed vel nibh quis nisl euismod consequat eu ut augue. Donec sit amet rhoncus lacus. Morbi dictum dapibus orci ut dictum. Duis sed ex vel dui accumsan semper et eu dui. Sed sit amet risus at tortor pulvinar malesuada. Aliquam posuere tempor est, quis varius dolor gravida vel. Morbi eget purus et sem accumsan consequat scelerisque a dolor. Aenean pellentesque diam quam, in feugiat ex venenatis vitae. Donec sit amet bibendum eros, eget mattis felis. Curabitur pulvinar justo et tincidunt ultricies. Morbi eu dui id leo posuere facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis viverra est, et luctus ex.
-
-Nam fermentum, felis sit amet interdum maximus, lectus risus tempus libero, quis consectetur felis dui id nisi. Pellentesque nisl risus, tempus ut turpis id, egestas porttitor dolor. Ut sed eleifend leo. Nam quis lorem ante. Praesent sit amet lectus ex. Donec bibendum dui orci, at commodo lacus ultrices in. Nam orci nulla, tincidunt in tellus sodales, facilisis dapibus lectus.</p>
+    <div className="lg:mt-20 m-4 p-4">
+      <div className="flex flex-col items-center">
+        <h2 className="text-3xl lg:text-5xl font-bold intersect:motion-preset-expand motion-duration-1000">{t("title")}</h2>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 mt-10 lg:mt-15 gap-15 lg:gap-20">
+          <Image
+            src="/images/Skills/c.png"
+            width={500}
+            height={500}
+            alt="C logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/css.png"
+            width={500}
+            height={500}
+            alt="CSS logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/html.png"
+            width={500}
+            height={500}
+            alt="HTML logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/javascript.png"
+            width={500}
+            height={500}
+            alt="javascript logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/typescript.webp"
+            width={500}
+            height={500}
+            alt="typescript logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/php.svg"
+            width={500}
+            height={500}
+            alt="php logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/react.png"
+            width={500}
+            height={500}
+            alt="React logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/nextjs.png"
+            width={500}
+            height={500}
+            alt="Nextjs logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/vue.png"
+            width={500}
+            height={500}
+            alt="vue logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/tailwind.png"
+            width={500}
+            height={500}
+            alt="tailwind logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/nestjs.png"
+            width={500}
+            height={500}
+            alt="Nestjs logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/nodejs.png"
+            width={500}
+            height={500}
+            alt="nodejs logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/mongodb.webp"
+            width={500}
+            height={500}
+            alt="mongodb logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/mysql.png"
+            width={500}
+            height={500}
+            alt="mysql logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/docker.webp"
+            width={500}
+            height={500}
+            alt="docker logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+          <Image
+            src="/images/Skills/git.png"
+            width={500}
+            height={500}
+            alt="git logo"
+            className="w-[60px] h-[70px] lg:w-[80px] lg:h-[90px]"
+          />
+        </div>
+      </div>
     </div>
   );
 }
