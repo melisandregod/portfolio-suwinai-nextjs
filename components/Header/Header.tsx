@@ -40,7 +40,7 @@ export default function Header() {
             </li>
             <li
               className="hover:text-secondary text-primary-foreground cursor-pointer"
-              onClick={() => scrollToSection("Skills", -150)}
+              onClick={() => scrollToSection("Skills", -120)}
             >
               {t("Skills")}
             </li>
