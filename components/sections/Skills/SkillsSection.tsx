@@ -29,7 +29,7 @@ export default function Skills() {
         <h2 className="text-3xl lg:text-5xl font-bold intersect:motion-preset-expand motion-duration-1000">
           {t("title")}
         </h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 my-10 lg:mt-15 gap-15">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 my-10 lg:mt-15 gap-15 lg:gap-10">
           {logoList.map((v, i) => (
             <div key={i} className="flex flex-col items-center gap-5">
               <Image

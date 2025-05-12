@@ -18,6 +18,8 @@ export default function Header() {
   const t = useTranslations("nav");
 
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  //scroll to section
   const scrollToSection = (id: string, offset: number = 0) => {
     const element = document.getElementById(id);
     if (element) {
@@ -46,7 +48,7 @@ export default function Header() {
             </li>
             <li
               className="hover:text-secondary text-primary-foreground cursor-pointer"
-              onClick={() => scrollToSection("Projects")}
+              onClick={() => scrollToSection("Projects", -120)}
             >
               {t("Projects")}
             </li>
@@ -94,13 +96,13 @@ export default function Header() {
               </DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:text-secondary text-primary-foreground cursor-pointer"
-                onClick={() => scrollToSection("Skills")}
+                onClick={() => scrollToSection("Skills",-20)}
               >
                 {t("Skills")}
               </DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:text-secondary text-primary-foreground cursor-pointer"
-                onClick={() => scrollToSection("Projects")}
+                onClick={() => scrollToSection("Projects",-40)}
               >
                 {t("Projects")}
               </DropdownMenuItem>

@@ -24,12 +24,14 @@ export default function Hero() {
           width={200}
           height={200}
           alt="Profile Picture"
-          className="intersect:motion-preset-expand motion-duration-1000 motion-delay-0 w-50 h-50 rounded-[1000px] object-cover border-2 border-primary drop-shadow-xl drop-shadow-accent "
+          className="motion-preset-expand motion-duration-1000 w-50 h-50 rounded-[1000px] object-cover border-2 border-primary drop-shadow-xl drop-shadow-accent "
         />
         <div className="overflow-hidden">
           <h1 className="intersect:motion-preset-slide-right motion-delay-0 motion-duration-1000">
             <p className="text-2xl">{t("title")}</p>
-            <p className="text-3xl font-bold drop-shadow-xs drop-shadow-black">{t("name")}</p>
+            <p className="text-3xl font-bold drop-shadow-xs drop-shadow-black">
+              {t("name")}
+            </p>
           </h1>
           <p className="intersect:motion-preset-slide-right motion-delay-100 motion-duration-1000 text-2xl">
             {t("intro")}
@@ -86,10 +88,12 @@ export default function Hero() {
       <div className="hidden md:flex mt-20 w-full h-[80vh] justify-center">
         <div className="flex justify-between gap-10 lg:gap-40 mx-20 px-10">
           <div className="m-2 p-2 overflow-hidden flex flex-col justify-center">
-            <h1 className="intersect:motion-preset-slide-right motion-delay-0 motion-duration-1000">
+            <div className="intersect:motion-preset-slide-right motion-delay-0 motion-duration-1000">
               <p className="text-2xl lg:text-5xl">{t("title")}</p>
-              <p className="text-2xl lg:text-6xl font-bold drop-shadow-xs drop-shadow-black">{t("name")}</p>
-            </h1>
+              <p className="text-2xl lg:text-6xl font-bold drop-shadow-xs drop-shadow-black">
+                {t("name")}
+              </p>
+            </div>
             <p className="text-xl lg:text-3xl intersect:motion-preset-slide-left motion-delay-100 motion-duration-1000">
               {t("intro")}
             </p>
@@ -149,7 +153,7 @@ export default function Hero() {
               width={500}
               height={500}
               alt="Profile Picture"
-              className="intersect:motion-preset-expand motion-duration-1000 motion-delay-0 rounded-[50px] object-cover object-top border-2 border-primary drop-shadow-xl drop-shadow-accent"
+              className="motion-preset-expand motion-duration-1000 rounded-[50px] object-cover object-top border-2 border-primary drop-shadow-xl drop-shadow-accent"
             />
           </div>
         </div>

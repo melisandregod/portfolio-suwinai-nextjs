@@ -13,7 +13,41 @@
     "work": "I’m currently gaining real-world experience and growing as a developer,",
     "description": "enjoying problem-solving, learning new things, and creating meaningful user experiences."
   },
-  "Skills":{
+  "Skills": {
     "title": "Tools & Technologies"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "github" : "See more in my Github"
+  },
+  "ProjectList": {
+    "ThaiXplore": {
+      "category": "Class Project (Software Enginner Class)",
+      "stack": "React js,Express Js, MongoDB , Tailwind CSS",
+      "description": "ThaiXplore is a full-stack web app inspired by the MICE industry, enabling users to plan and book custom event packages by combining services like hotels, car rentals,restaurants, and event organizers.",
+      "github": "https://github.com/PrinTTer/SE_67_GROUP_8",
+      "date": "MAR 2025"
+    },
+    "MilkDeliveryManagement": {
+      "category": "Freelance Project",
+      "stack": "React-Native, Android Studio, Expo, SQLite",
+      "description": "A mobile application for managing milk delivery operations. Supports CRUD for schools, milk factories, and ice factories, including Google Maps integration.",
+      "github": "https://github.com/melisandregod/milkexpressmanagement",
+      "date": "JAN 2025"
+    },
+    "MiniRPGChronicle": {
+      "category": "Class Project (Mobile App Class)",
+      "stack": "React Native (Expo), Xcode",
+      "description": "Mini RPG Chronicle is a turn-based mobile game where players choose a class (Knight, Mage, Assassin) and battle monsters. Each class has unique stats, skills, and an inventory system. Features include animated combat, EXP-based leveling, and a profile system to track progress.",
+      "github": "https://github.com/melisandregod/mini-rpg-game-react-native-mobile-app-class",
+      "date": "MAR 2025"
+    },
+    "PortfolioWebsite": {
+    "category": "Personal Project",
+    "stack": "Next.js, TailwindCSS, TypeScript, next-intl",
+    "description": "A personal portfolio website to showcase my projects, skills, and background. Features include multilingual support (EN/TH), responsive layout, and themes (light/dark mode).",
+    "github": "https://github.com/melisandregod/portfolio-suwinai-nextjs",
+    "date": "APR 2025"
+  }
   }
 }
