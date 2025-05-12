@@ -15,5 +15,39 @@
   },
   "Skills":{
     "title": "เครื่องมือ & เทคโนโลยี"
+  },
+  "Projects": {
+  "title": "ผลงานของฉัน",
+  "github": "ดูเพิ่มเติมได้ที่ Github ของฉัน"
+},
+"ProjectList": {
+  "ThaiXplore": {
+    "category": "โปรเจกต์จากชั้นเรียน (วิชา Software Engineering)",
+    "stack": "React.js, Express.js, MongoDB, Tailwind CSS",
+    "description": "ThaiXplore เป็นเว็บแอปแบบ full-stack ที่ได้รับแรงบันดาลใจจากอุตสาหกรรม MICE ช่วยให้ผู้ใช้สามารถวางแผนและจองแพ็คเกจอีเวนต์แบบกำหนดเอง โดยผสมผสานบริการต่าง ๆ เช่น โรงแรม รถเช่า ร้านอาหาร และผู้จัดงาน",
+    "github": "https://github.com/PrinTTer/SE_67_GROUP_8",
+    "date": "มีนาคม 2025"
+  },
+  "MilkDeliveryManagement": {
+    "category": "โปรเจกต์ฟรีแลนซ์",
+    "stack": "React Native, Android Studio, Expo, SQLite",
+    "description": "แอปมือถือสำหรับจัดการระบบการจัดส่งนม รองรับการเพิ่ม แก้ไข ลบ ข้อมูลของโรงเรียน โรงงานนม และโรงน้ำแข็ง พร้อมทั้งเชื่อมต่อกับ Google Maps",
+    "github": "https://github.com/melisandregod/milkexpressmanagement",
+    "date": "ม.ค 2025"
+  },
+  "MiniRPGChronicle": {
+    "category": "โปรเจกต์จากชั้นเรียน (วิชา Mobile App)",
+    "stack": "React Native (Expo), Xcode",
+    "description": "Mini RPG Chronicle เป็นเกมมือถือแบบเทิร์นเบสที่ผู้เล่นสามารถเลือกคลาส (อัศวิน, นักเวทย์, นักลอบสังหาร) เพื่อต่อสู้กับมอนสเตอร์ โดยแต่ละคลาสจะมีค่าสถานะ ทักษะ และระบบไอเท็มเฉพาะตัว พร้อมระบบการต่อสู้แบบแอนิเมชัน ระบบเลเวลจากค่าประสบการณ์ และระบบโปรไฟล์ผู้เล่น",
+    "github": "https://github.com/melisandregod/mini-rpg-game-react-native-mobile-app-class",
+    "date": "มีนาคม 2025"
+  },
+  "PortfolioWebsite": {
+    "category": "โปรเจกต์ส่วนตัว",
+    "stack": "Next.js, TailwindCSS, TypeScript, next-intl",
+    "description": "เว็บไซต์พอร์ตโฟลิโอส่วนตัว สำหรับแสดงโปรเจกต์ ทักษะ และประวัติของฉัน มีฟีเจอร์รองรับหลายภาษา (EN/TH), รองรับมือถือ, และธีม (โหมดสว่าง/มืด)",
+    "github": "https://github.com/melisandregod/portfolio-suwinai-nextjs",
+    "date": "เมษายน 2025"
   }
+}
 }
