@@ -16,7 +16,7 @@ import Link from "next/link";
 export default function Hero() {
   const t = useTranslations("Home");
   return (
-    <div className="m-4 p-4">
+    <div className="m-4 p-4" id="Home">
       {/* Mobile Responsive */}
       <div className="md:hidden flex flex-col items-center gap-5">
         <Image
