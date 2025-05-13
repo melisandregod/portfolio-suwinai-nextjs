@@ -49,7 +49,7 @@ export default function Projects() {
                   "
                     width={600}
                     height={400}
-                    className="w-[300] h-[180]"
+                    className="w-[300] h-[180] rounded-lg"
                   />
                   <p className="text-sm">{t(`${key}.description`)}</p>
                   <p className="text-sm font-bold">
@@ -101,7 +101,7 @@ export default function Projects() {
                   "
                     width={600}
                     height={400}
-                    className="w-[300] h-[180]"
+                    className="w-[300] h-[180] rounded-lg"
                   />
                   <p className="text-sm ">{t(`${key}.description`)}</p>
                   <p className="text-sm font-bold">

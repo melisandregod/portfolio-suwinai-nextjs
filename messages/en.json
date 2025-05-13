@@ -18,7 +18,7 @@
   },
   "Projects": {
     "title": "My Projects",
-    "github" : "See more in my Github"
+    "github": "See more in my Github"
   },
   "ProjectList": {
     "ThaiXplore": {
@@ -43,11 +43,28 @@
       "date": "MAR 2025"
     },
     "PortfolioWebsite": {
-    "category": "Personal Project",
-    "stack": "Next.js, TailwindCSS, TypeScript, next-intl",
-    "description": "A personal portfolio website to showcase my projects, skills, and background. Features include multilingual support (EN/TH), responsive layout, and themes (light/dark mode).",
-    "github": "https://github.com/melisandregod/portfolio-suwinai-nextjs",
-    "date": "APR 2025"
-  }
+      "category": "Personal Project",
+      "stack": "Next.js, TailwindCSS, TypeScript, next-intl",
+      "description": "A personal portfolio website to showcase my projects, skills, and background. Features include multilingual support (EN/TH), responsive layout, and themes (light/dark mode).",
+      "github": "https://github.com/melisandregod/portfolio-suwinai-nextjs",
+      "date": "APR 2025"
+    }
+  },
+  "Experience": {
+    "title": "Experience & Education"
+  },
+  "EXPList": {
+    "SUNMI": {
+      "date": "APR 2025-MAY 2025",
+      "role": "Software Developer Intern",
+      "company": "Sunmi Thailand",
+      "description": "During my internship at Sunmi Thailand, I contributed to the development of a full-stack web application aimed at facilitating product sales and streamlining operations through an admin dashboard. My primary focus was on frontend development, utilizing modern web technologies to create responsive and intuitive user interfaces."
+    },
+    "KU": {
+      "date": "2022-Present",
+      "role": "Bachelor of Computer Engineering",
+      "company": "Kasetsart University Kamphaeng Saen Campus",
+      "description":""
+    }
   }
 }
