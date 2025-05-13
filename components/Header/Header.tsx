@@ -54,7 +54,7 @@ export default function Header() {
             </li>
             <li
               className="hover:text-secondary text-primary-foreground cursor-pointer"
-              onClick={() => scrollToSection("Experience")}
+              onClick={() => scrollToSection("Experience",-40)}
             >
               {t("Experience")}
             </li>
@@ -108,7 +108,7 @@ export default function Header() {
               </DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:text-secondary text-primary-foreground cursor-pointer"
-                onClick={() => scrollToSection("Experience")}
+                onClick={() => scrollToSection("Experience",-40)}
               >
                 {t("Experience")}
               </DropdownMenuItem>
