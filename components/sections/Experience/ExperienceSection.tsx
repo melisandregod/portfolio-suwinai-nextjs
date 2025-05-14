@@ -12,7 +12,7 @@ export default function Experience() {
     <div className="m-4 overflow-hidden" id="Experience">
       <div className="flex flex-col items-center gap-10 my-10">
         <h2
-          className="text-3xl lg:text-5xl font-bold mt-2 xl:mt-20"
+          className="text-3xl lg:text-5xl font-bold mt-2 xl:mt-20 mx-5"
           data-aos="zoom-in"
         >
           {title("title")}

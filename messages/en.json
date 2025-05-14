@@ -64,7 +64,24 @@
       "date": "2022-Present",
       "role": "Bachelor of Computer Engineering",
       "company": "Kasetsart University Kamphaeng Saen Campus",
-      "description":""
+      "description": ""
     }
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "description1": "Feel free to contact me directly at",
+    "email": "suwinai.aiamsumaung@gmail.com",
+    "description2": "or through this form",
+    "form":{
+      "email":"Your email",
+      "subject":"Subject",
+      "message":"Message",
+      "submit":"Submit",
+      "validation":{
+        "nonempty":"this field is required",
+        "email":"Please enter a valid email address."
+      }
+    }
+    
   }
 }
