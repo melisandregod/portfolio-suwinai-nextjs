@@ -58,11 +58,11 @@ export default function Contact() {
   }
 
   return (
-    <div className="m-4">
+    <div className="m-4" id="Contact">
       <div className="flex flex-col items-center">
         <div className="my-5 flex flex-col items-center gap-2" data-aos="zoom-in">
           <h2 className="text-3xl lg:text-5xl font-bold">{t("title")}</h2>
-          <p className="text-sm lg:text-xl px-10">
+          <p className="lg:text-xl px-10 hidden lg:flex">
             {t("description1")} {t("email")} {t("description2")}
           </p>
         </div>
