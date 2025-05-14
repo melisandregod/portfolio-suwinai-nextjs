@@ -13,21 +13,12 @@ import {
   DropdownMenuSeparator,
 } from "../ui/dropdown-menu";
 import LanguageSwitcher from "../LanguageSwitcher";
+import { scrollToSection } from "@/lib/utils";
 
 export default function Header() {
   const t = useTranslations("nav");
 
   const [toggleMenu, setToggleMenu] = useState(false);
-
-  //scroll to section
-  const scrollToSection = (id: string, offset: number = 0) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const y =
-        element.getBoundingClientRect().top + window.pageYOffset + offset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  };
 
   return (
     <>
@@ -54,13 +45,13 @@ export default function Header() {
             </li>
             <li
               className="hover:text-secondary text-primary-foreground cursor-pointer"
-              onClick={() => scrollToSection("Experience",-40)}
+              onClick={() => scrollToSection("Experience", -40)}
             >
               {t("Experience")}
             </li>
             <li
               className="hover:text-secondary text-primary-foreground cursor-pointer"
-              onClick={() => scrollToSection("Contact",-120)}
+              onClick={() => scrollToSection("Contact", -120)}
             >
               {t("Contact")}
             </li>
@@ -70,7 +61,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      {/* Responsive Design */}
+      {/* Mobile Responsive Design */}
       <div className="md:hidden flex justify-end w-full">
         <div
           className={`${
@@ -96,19 +87,19 @@ export default function Header() {
               </DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:text-secondary text-primary-foreground cursor-pointer"
-                onClick={() => scrollToSection("Skills",-20)}
+                onClick={() => scrollToSection("Skills", -20)}
               >
                 {t("Skills")}
               </DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:text-secondary text-primary-foreground cursor-pointer"
-                onClick={() => scrollToSection("Projects",-40)}
+                onClick={() => scrollToSection("Projects", -40)}
               >
                 {t("Projects")}
               </DropdownMenuItem>
               <DropdownMenuItem
                 className="hover:text-secondary text-primary-foreground cursor-pointer"
-                onClick={() => scrollToSection("Experience",-40)}
+                onClick={() => scrollToSection("Experience", -40)}
               >
                 {t("Experience")}
               </DropdownMenuItem>

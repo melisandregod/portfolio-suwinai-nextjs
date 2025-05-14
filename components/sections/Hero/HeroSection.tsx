@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { scrollToSection } from "@/lib/utils";
 import {
   CircleUserIcon,
   FacebookIcon,
@@ -44,7 +45,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex w-full justify-end">
-          <Button className="ml-3">
+          <Button className="ml-3" onClick={() => scrollToSection("Contact")}>
             <CircleUserIcon size={1000} />
             Contact Me
           </Button>
@@ -53,7 +54,7 @@ export default function Hero() {
               "https://drive.usercontent.google.com/download?id=1EYQ4C_Eg1EuVWaivYynrNb6FnJVpCIeJ&export=download&authuser=0&confirm=t&uuid=d6a7eece-73cf-4e31-837c-748aae872172&at=ALoNOgly9Pu1Tf8wLHFjucJj9HtI:1746802655228"
             }
           >
-            <Button className="ml-3">
+            <Button className="ml-3" onClick={() => scrollToSection("Contact")}>
               <HardDriveDownloadIcon />
               Download CV
             </Button>
@@ -114,7 +115,10 @@ export default function Hero() {
                   Download CV
                 </Button>
               </Link>
-              <Button className="ml-3 mr-3 cursor-pointer lg:flex md:hidden">
+              <Button
+                className="ml-3 mr-3 cursor-pointer lg:flex md:hidden"
+                onClick={() => scrollToSection("Contact", -120)}
+              >
                 <CircleUserIcon size={1000} />
                 Contact Me
               </Button>
