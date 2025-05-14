@@ -8,6 +8,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function HomePage() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function HomePage() {
   }, []);
   return (
     <>
+      <Toaster />
       <ParticleBackground />
       <Hero />
       <Skills />
