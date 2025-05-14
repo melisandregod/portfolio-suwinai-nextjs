@@ -112,7 +112,7 @@ export default function Contact() {
               )}
             />
             <div className="flex justify-end">
-              <Button type="submit">
+              <Button type="submit" className="cursor-pointer">
                 {t("form.submit")}
                 <Send />
               </Button>
